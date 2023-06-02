@@ -8,7 +8,7 @@ Function Get-AzWebJobStatus{    <#
     ===========================================================================
     .DESCRIPTION
     This script is used to check status of Azure App Serivce Web Jobs. Requires
-    the Az.Website and Az.Accounts Powershell modules.
+    the Az.Websites and Az.Accounts Powershell modules.
     ===========================================================================
     IMPORTANT:
     ===========================================================================
