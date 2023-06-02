@@ -46,6 +46,14 @@ Function Get-AzWebJobStatus{    <#
     )
 
 
+    #Checks for active Az connection
+    $context = Get-AzContext
+    If (!$Context){
+
+        Connect-AzAccount
+
+    }
+    
     #####################################
     If ($Slot){
 
