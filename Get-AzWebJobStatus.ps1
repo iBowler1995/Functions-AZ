@@ -120,7 +120,7 @@ Function Get-AzWebJobStatus{    <#
     else {
 
         # Get the publishing profile for the active deployment slot
-        $publishingProfileXml = Get-AzWebAppPublishingProfile -ResourceGroupName $resourceGroupName -Name $appName
+        $publishingProfileXml = Get-AzWebAppPublishingProfile -ResourceGroupName $RG -Name $appName
         # Load the XML into an XML document
         $publishingProfileDoc = [xml]$publishingProfileXml
         # Select the first publishing profile
@@ -174,7 +174,7 @@ Function Get-AzWebJobStatus{    <#
     
                 }
 
-    }
+        }
 
     }
 
